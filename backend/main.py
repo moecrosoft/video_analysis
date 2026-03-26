@@ -65,6 +65,8 @@ async def analyse(file: UploadFile = File(...)):
         return {'summary': summary, 'frames_analysed': len(captions)}
     
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
     finally:
         if os.path.exists(tmp_path):
