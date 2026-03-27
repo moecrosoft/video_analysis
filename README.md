@@ -1,4 +1,4 @@
-# 🎥 Video Scene Analyzer AI
+# 🎥 Video Analysis AI
 
 An end-to-end AI application that analyzes uploaded videos, extracts frame-level understanding using vision models, and generates a natural language summary using large language models. This project combines computer vision (OpenCV + BLIP), a FastAPI backend, a Streamlit frontend, a PostgreSQL database, and full Dockerized deployment running on an AWS EC2 instance.
 
